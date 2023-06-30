@@ -8,8 +8,8 @@ namespace HomeworkSeminar29062023
         {
             try
             {
-                Console.WriteLine("Задача №19:");
-                Task19.Palindrome();
+                Console.WriteLine("Задача №21:");
+                Task21.DistanceTwoPoints();
             }
             catch (Exception ex)
             {
