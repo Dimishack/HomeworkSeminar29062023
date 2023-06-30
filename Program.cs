@@ -8,8 +8,8 @@ namespace HomeworkSeminar29062023
         {
             try
             {
-                Console.WriteLine("Задача №21:");
-                Task21.DistanceTwoPoints();
+                Console.WriteLine("Задача №23:");
+                Task23.TableCubanNumbers();
             }
             catch (Exception ex)
             {

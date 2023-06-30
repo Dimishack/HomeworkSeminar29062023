@@ -12,7 +12,8 @@ namespace HomeworkSeminar29062023
         internal static void TableCubanNumbers()
         {
             Console.Write("Введите целое положительное число N для вывода таблицы кубов чисел от 1 до N: ");
-            int number = Int32.Parse(Console.ReadLine());
+            if (!Int32.TryParse(Console.ReadLine(), out var number))
+                throw new Exception("Введено не целое число");
             if (number < 1)
                 throw new Exception("Введено отрицательное число или 0");
             Console.WriteLine("Таблица кубов чисел от 1 до " +  number);
