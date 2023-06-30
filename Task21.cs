@@ -17,11 +17,14 @@ namespace HomeworkSeminar29062023
             {
                 Console.WriteLine("Введите координаты {0} точки:", numberPoint);
                 Console.Write("x = ");
-                var x = Double.Parse(Console.ReadLine());
+                if (!Double.TryParse(Console.ReadLine(), out var x))
+                    throw new Exception("Введено неккоректное значение x");
                 Console.Write("y = ");
-                var y = Double.Parse(Console.ReadLine());
+                if (!Double.TryParse(Console.ReadLine(), out var y))
+                    throw new Exception("Введено неккоректное значение y");
                 Console.Write("z = ");
-                var z = Double.Parse(Console.ReadLine());
+                if (!Double.TryParse(Console.ReadLine(), out var z))
+                    throw new Exception("Введено неккоректное значение z");
                 return new double[3] { x, y, z};
             }
             Console.WriteLine("Введите координаты двух точек для нахождения расстояния между ними в пространстве:");
