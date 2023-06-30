@@ -23,6 +23,8 @@ namespace HomeworkSeminar29062023
                 if (i < number)
                     Console.Write(", ");
             }
+
+            Program.ReturnToMain();
         }
     }
 }

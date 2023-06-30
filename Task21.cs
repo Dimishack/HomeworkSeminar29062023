@@ -38,6 +38,8 @@ namespace HomeworkSeminar29062023
                                 pointFirst[0], pointFirst[1], pointFirst[2],
                                 pointSecond[0], pointSecond[1], pointSecond[2],
                                 Math.Round(distance, 2));
+
+            Program.ReturnToMain();
         }
     }
 }

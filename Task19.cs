@@ -34,6 +34,8 @@ namespace HomeworkSeminar29062023
                 particleNo = "не ";
             Console.WriteLine("Значение \"{0}\" {1}является палиндромом", value, particleNo);
             ReadingLeftToRightAndRightToLeft(value);
+            
+            Program.ReturnToMain();
         }
 
         private static void ReadingLeftToRightAndRightToLeft(string value)
