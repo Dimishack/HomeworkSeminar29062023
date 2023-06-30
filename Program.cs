@@ -8,7 +8,8 @@ namespace HomeworkSeminar29062023
         {
             try
             {
-
+                Console.WriteLine("Задача №19:");
+                Task19.Palindrome();
             }
             catch (Exception ex)
             {
@@ -17,7 +18,7 @@ namespace HomeworkSeminar29062023
             }
             finally
             {
-                Console.WriteLine("Нажмите на любую клавишу для выхода из программы...");
+                Console.WriteLine("\nНажмите на любую клавишу для выхода из программы...");
                 Console.ReadKey(true);
             }
         }
